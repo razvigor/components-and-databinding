@@ -1,0 +1,13 @@
+<div class="flex flex-col mt-9">
+  <div class="bg-gray-300 rounded-t-lg border py-4 px-3">
+    <h3 class="text-xl font-medium">{{ element.name }}</h3>
+  </div>
+  <div class="border border-t-0 py-4 px-3">
+    <p>
+      <strong *ngIf="element.type === 'server'" class="text-red-500">{{
+        element.content
+      }}</strong>
+      <em *ngIf="element.type === 'blueprint'">{{ element.content }}</em>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="flex">
+  <div class="basis-full">
+    <h2 class="mb-4">Add new Servers or blueprints</h2>
+    <label for="server-name">Server Name</label>
+    <input
+      type="text"
+      class="w-full h-10 border rounded-md my-4 px-3"
+      id="server-name"
+      [(ngModel)]="newServerName"
+    />
+    <label for="server-content">Server Content</label>
+    <input
+      type="text"
+      class="w-full h-10 border rounded-md my-4 px-3"
+      id="server-content"
+      [(ngModel)]="newServerContent"
+    />
+    <button
+      class="px-10 py-5 bg-blue-700 hover:bg-blue-500 text-white rounded-md"
+      (click)="onAddServer()"
+    >
+      Add Server
+    </button>
+    <button
+      class="px-10 py-5 bg-blue-700 hover:bg-blue-500 text-white rounded-md ml-5"
+      (click)="onAddBlueprint()"
+    >
+      Add Server Blueprint
+    </button>
+  </div>
+</div>
